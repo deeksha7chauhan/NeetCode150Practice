@@ -1,3 +1,6 @@
+#When we encounter a repeating character, it means we need to shrink the window from the left until 
+the repeating character is no longer in the window, as we are searching for substrings without repeating characters.
+
 public class Solution {
     public int LengthOfLongestSubstring(string s) {
         HashSet<char> charSet = new HashSet<char>();
