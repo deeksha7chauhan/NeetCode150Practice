@@ -20,3 +20,23 @@ public class Solution {
 }
 #Time complexity: O(n)
 Space complexity: O(n)
+
+
+public class Solution {
+    public int[] DailyTemperatures(int[] temperatures) {
+        int n = temperatures.Length;
+        int [] answers = new int[n];
+        Stack<int> stack = new Stack<int>();
+
+        for(int i = n-1; i >=0; i--){
+            while(stack.Count > 0 && temperatures[i] >= temperatures[stack.Peek()]){
+                stack.Pop();
+            }
+
+            answers[i] = stack.Count == 0 ? 0 : stack.Peek() - i;
+            stack.Push(i);
+        }
+        
+        return answers;
+    }
+}
