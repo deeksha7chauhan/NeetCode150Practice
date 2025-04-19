@@ -15,5 +15,12 @@ public class Solution {
         return stack.Count;
     }
 }
-Time complexity: O(nlogn)
-Space complexity: O(n)
+#Time complexity: O(nlogn)
+#Space complexity: O(n)
+
+#stack.ElementAt(0) → Top element (3)
+#stack.ElementAt(1) → Second element (2)
+#stack.ElementAt(2) → Third element (1)
+
+    stack.Peek()//= element[0], element at the top which is recently pushed. <= stack.ElementAt(1) // = element[1],element pushed in the beginning)
+    Since we are always pushing 2 elements in the stack which is the nearest to the target since we reversed the array and the second on is the element next to first element.
