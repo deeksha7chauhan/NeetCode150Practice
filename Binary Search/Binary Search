@@ -1,0 +1,30 @@
+public class Solution {
+    public int Search(int[] nums, int target) {
+        //initialize two pointers for the left and right bounds of the array
+        int l = 0, r = nums.Length - 1;
+
+        // Continue searching while the left pointer is less than or equal to the right
+        while (l <= r) {
+            // Find the middle index to avoid overflow
+            int m = l + ((r - l) / 2);
+
+            // If the middle element is greater than the target, search the left half
+            if (nums[m] > target) {
+                r = m - 1;
+            } 
+            // If the middle element is less than the target, search the right half
+            else if (nums[m] < target) {
+                l = m + 1;
+            } 
+            // If the middle element is equal to the target, return its index
+            else {
+                return m;
+            }
+        }
+
+        // If the target is not found, return -1
+        return -1;
+    }
+}
+#Time Complexity: O(log n)
+#Space Complexity: O(1)
