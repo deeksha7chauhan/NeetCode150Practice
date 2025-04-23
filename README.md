@@ -12,3 +12,5 @@ The sliding window approach allows us to scan through the string once (linear ti
 
 
 #**Deque** (Double-Ended Queue/ linkedlist) is a type of data structure that allows insertion and removal of elements from both the front and rear. In C#, it can be implemented using LinkedList<T> and List<T>.
+
+#**PIVOT** Pivot element is always an element which will have the left and right element greater to it. eg. 10,0,1 **0** is the pivot here.
