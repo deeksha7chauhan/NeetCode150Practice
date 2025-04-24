@@ -20,3 +20,5 @@ The sliding window approach allows us to scan through the string once (linear ti
 //nitialization means creating the object in memory before using it.
 
 //creating an empty dictionary that you can start adding keys and values to.
+Field declaration: private Dictionary<string, List<Tuple<int, string>>> keyStore;
+Initialization (usually in constructor): keyStore = new Dictionary<string, List<Tuple<int, string>>>();
