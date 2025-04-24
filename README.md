@@ -16,3 +16,7 @@ The sliding window approach allows us to scan through the string once (linear ti
 #**PIVOT** Pivot element is always an element which will have the left and right element greater to it. eg. 10,0,1 **0** is the pivot here.
 
 #**Binary Search** always applied to a sorted array. time complexity to `O(log N)`
+
+//nitialization means creating the object in memory before using it.
+
+//creating an empty dictionary that you can start adding keys and values to.
