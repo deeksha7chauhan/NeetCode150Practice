@@ -6,7 +6,14 @@ Sliding window approach.
 Ans. In ASCII, there are 95 printable characters: 26 lowercase English letters, 26 uppercase English letters, 10 digits (0-9), 32 special characters and symbols, and the space character. This makes a total of 95 unique characters. Even if you don’t know there are exactly 95, it reasonable that there would be more than 52 (26 uppercase, 26 lowercase).
 
 
-HashSet:- A Set is a data structure that maintains a collection of unique elements. It provides constant-time complexity for search, insertion, and deletion, making it a suitable choice for tracking unique characters in a string.
+#**HashSet**: A Set is a data structure maintaining a collection of unique elements. It provides constant-time complexity for search, insertion, and deletion, making it suitable for tracking unique characters in a string.
+- `HashSet<ListNode>` A hash set is like a *special list* that stores items **without duplicates** and checks very fast if something is already inside it.
+**Step	  Meaning**
+1.	      Take the key (like a ListNode, a number, or a string).
+2.	      Run it through a hash function (a math formula) that turns it into a number (hash code).
+3.	      Use that number to find the "bucket" (memory location) where to store the value.
+4.	      When you want to retrieve it later, hash the key again and jump to the same spot!
+
 
 The sliding window approach allows us to scan through the string once (linear time complexity) while keeping track of the longest substring without repeating characters. It's an optimal strategy for this problem as it avoids unnecessary repeated computations.
 
