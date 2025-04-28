@@ -1,3 +1,7 @@
+
+Time complexity: O(n)
+Space complexity: O(1)
+
 // Definition of a Node in the Linked List
 public class ListNode {
     public int val;
