@@ -13,17 +13,24 @@ The sliding window approach allows us to scan through the string once (linear ti
 
 #**Deque** (Double-Ended Queue/ linkedlist) is a type of data structure that allows insertion and removal of elements from both the front and rear. In C#, it can be implemented using LinkedList<T> and List<T>.
 
-#**PIVOT** Pivot element is always an element which will have the left and right element greater to it. eg. 10,0,1 **0** is the pivot here.
+#**PIVOT** Pivot element is always an element that has the left and right elements greater to it. eg. 10,0,1 **0** is the pivot here.
 
-#**Binary Search** always applied to a sorted array. time complexity to `O(log N)`
+#**Binary Search** is always applied to a sorted array. time complexity to `O(log N)`
 
-//nitialization means creating the object in memory before using it.
+//Initialization means creating the object in memory before using it.
 
 //creating an empty dictionary that you can start adding keys and values to.
 Field declaration: private Dictionary<string, List<Tuple<int, string>>> keyStore;
 Initialization (usually in constructor): keyStore = new Dictionary<string, List<Tuple<int, string>>>();
 
-#***LinkedList*** is a linear data structure that stores elements in a non-contiguous location.
+#***LinkedList*** is a linear data structure that stores elements in a **non-contiguous** location.
+-**Non-contiguous** memory is allocated 1 by 1 to individual elements.
 -In C#, **LinkedList** is the generic type of collection that is defined in the System.Collections.Generic namespace.
 -can store duplicate elements of the same type.
 -prefer linked list over arrays is due to ease of insertion and deletion in linked list.
+-Access is *SEQUENTIAL*.
+- Never manipulate *head* of a linkedlist. *Create* a new *temp* variable and store *'head'*, then perform operations.
+
+- #**Traverse a LinkedList** create a new *current node* and point to the *"head"*.
+
+**TYPES:-** "Single", "Double", "Circular"
