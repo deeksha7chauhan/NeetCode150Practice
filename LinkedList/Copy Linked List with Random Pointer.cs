@@ -22,17 +22,23 @@ public class Solution {
             l1 = l1.next.next;  // move to next original node
         }
 
+//[7] → [7'] → [13] → [13'] → [11] → [11']
+//l1 = [7]
+// l1.random = [11]
+// l1.next.random = l1.random.next = [11']
+// ✅ Set [7'].random = [11']
         // Step 3: Separate the cloned list from the original list
         l1 = head;
-        Node newHead = head.next;  // head of the cloned list
-        while (l1 != null) {
-            Node l2 = l1.next;        // clone node
-            l1.next = l2.next;        // restore original node's next
+        Node newHead = head.next;  //head of the cloned list
+        while (l1 != null) 
+        {
+            Node l2 = l1.next;        //clone node
+            l1.next = l2.next;        //restore original node's next
             l2.next = (l2.next != null) ? l2.next.next : null; // link clone's next
-            l1 = l1.next;             // move to next original node
+            l1 = l1.next;             //move to next original node
         }
-
-        return newHead;  // return deep copy head
+        return newHead;  //return deep copy head
     }
 }
+
 #Time Complexity: O(n)  Space Complexity: O(1) (excluding the returned cloned list)
