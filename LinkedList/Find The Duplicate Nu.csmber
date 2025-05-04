@@ -1,0 +1,27 @@
+public class Solution {
+    public int FindDuplicate(int[] nums) 
+    {
+        // here we had array which means numbers n indexes too.
+         int slow = 0, fast = 0;
+         //2,6,4,1,3,5
+         while(true) // loop until the two pointers coincide
+         {
+            slow = nums[slow]; // 2
+            fast = nums[nums[fast]]; //4
+            if (slow == fast) break;  // exit condition replaces the do-while test
+
+         }
+         //this means fast is 2 steps ahead of slow because nums[fast]=2 and fast[2]=4
+// Phase 2 – locate the entrance to the cycle (the duplicate value)
+            slow = 0;                     // reset tortoise to start
+            while (slow != fast) 
+            {   // now both move at the same speed
+                slow = nums[slow];
+                fast = nums[fast];
+            }
+
+        return slow;      
+    }
+}
+Time complexity: O(n)
+Space complexity: O(1)
