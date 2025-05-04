@@ -41,3 +41,7 @@ Initialization (usually in constructor): keyStore = new Dictionary<string, List<
 - #**Traverse a LinkedList** create a new *current node* and point to the *"head"*.
 
 **TYPES:-** "Single", "Double", "Circular"
+
+**Trees**-A tree is a data structure used to represent *hierarchical relationships*, like folders on your computer.
+-The most common type is the binary tree, where:
+-Each node can have at most 2 children, referred to as the left and right child
