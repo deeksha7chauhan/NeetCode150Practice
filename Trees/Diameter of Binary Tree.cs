@@ -11,7 +11,29 @@
  *     }
  * }
  */
+/solution1
+public class Solution {
+    public int DiameterOfBinaryTree(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
 
+        int leftHeight = MaxHeight(root.left);
+        int rightHeight = MaxHeight(root.right);
+        int diameter = leftHeight + rightHeight;
+        int sub = Math.Max(DiameterOfBinaryTree(root.left), 
+                           DiameterOfBinaryTree(root.right));
+        return Math.Max(diameter, sub);
+    }
+
+    public int MaxHeight(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        return 1 + Math.Max(MaxHeight(root.left), MaxHeight(root.right));
+    }
+}
+//Solution 2
 public class Solution {
     public int DiameterOfBinaryTree(TreeNode root) {
         if (root == null) {
