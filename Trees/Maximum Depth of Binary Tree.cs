@@ -49,7 +49,11 @@ public class Solution {
         return level;
     }
 }
-//inorder DFS Time and SPace complexity = O(n)
+//technique is called Breadth-First Search (BFS) or level-order traversal.
+//BFS visits all nodes level by level.
+//A FIFO queue perfectly models that idea—newly discovered children wait their turn behind nodes of the current level, so we never mix levels.
+//The queue lets us march across the tree level-by-level, incrementing level each pass; when the queue empties, level equals the maximum depth.
+//inorder DFS Time and SPace complexity = O(n). 
 
 public class Solution {
     public int MaxDepth(TreeNode root) {
