@@ -57,3 +57,6 @@ So when we convert recursion to iteration, we must use a stack manually to remem
 **Iterative** version	Requires us to remember where we paused → use stack
 **Stack (LIFO)**	Works like recursive function calls
 **Order matters**	Push right first, so left is processed first uses a stack behind the scenes!
+
+In recursive DFS, the function calls are managed by the call stack.
+In iterative DFS, we manage that ourselves — using a Stack<TreeNode>.
