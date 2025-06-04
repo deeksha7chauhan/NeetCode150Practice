@@ -48,3 +48,12 @@ Initialization (usually in constructor): keyStore = new Dictionary<string, List<
 **Inorder** (Left, Root, Right)
 **Preorder** (Root, Left, Right)
 **Postorder** (Left, Right, Root)
+
+**Iterative DFS = We Need a Stack! Why?**
+
+So when we convert recursion to iteration, we must use a stack manually to remember where we left off, just like recursion does.
+**Concept	Why Stack is Used**
+**DFS** = Depth First	We need to go deep first
+**Iterative** version	Requires us to remember where we paused → use stack
+**Stack (LIFO)**	Works like recursive function calls
+**Order matters**	Push right first, so left is processed first uses a stack behind the scenes!
