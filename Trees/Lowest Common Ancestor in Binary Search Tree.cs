@@ -4,6 +4,7 @@ Approach to solve this problem But Binary Tree:-
 1. if llca =null , rlca =null will return null to upper node.
 2. if llca = valid, rlca= invalid or vice versa, return valid value.
 3. when llca as well as rlca is not null return root.
+Time: O(n) Space: O(h)
 public class Solution {
     public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) 
 {
@@ -30,7 +31,8 @@ public class Solution {
 }
 }
 **/
-#Binary Serach Tree:-
+
+#sloution 2: #Binary Serach Tree:-
 public class Solution {
     public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         
@@ -48,6 +50,5 @@ public class Solution {
         return null;
     }
 }
+#Time: O(n) Space: O(1)
 
-
-#sloution 2:
